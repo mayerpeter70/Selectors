@@ -12,9 +12,10 @@
 
 .lorem {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  
+  justify-content: space-around;  
 }
 
 .lorem p::first-line {
@@ -32,6 +33,7 @@
   padding: 5px;
   padding-top: 40px;
   text-align: center;
+  margin: 20px;
 }
 
 .lorem p:hover {
@@ -53,14 +55,14 @@
 }
 
 .lorem p:hover::before {
-  content:"";
+  /*content:"";
   display: block;
   width: 20px;
-  height: 20px;
+  height: 20px;*/
   background-color: white;
-  border-radius: 10px;
+  /*border-radius: 10px;
   position: absolute;
   top: 10px;
   left: 140px;
-  right: 140px; 
+  right: 140px;*/ 
 }
