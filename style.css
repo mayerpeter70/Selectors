@@ -1,0 +1,11 @@
+.container {
+  border: 1px solid green;
+}
+
+.asteroid_big {
+    background-color: yellow
+}
+
+.container, .asteroid_b329_big {
+    font-weight: bold;
+}
