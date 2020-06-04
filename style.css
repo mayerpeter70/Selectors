@@ -22,18 +22,45 @@
 }
 
 .lorem * {
-  outline: 1px solid red;
+  outline: 1px solid salmon;
 }
 
 .lorem p {
+  position: relative;
   width: 300px;
   height: 120px;
   padding: 5px;
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: center;
 }
 
 .lorem p:hover {
   background-color: salmon;
   color: white;
+}
+
+.lorem p::before {
+  content:"";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: salmon;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 140px;
+  right: 140px; 
+}
+
+.lorem p:hover::before {
+  content:"";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 140px;
+  right: 140px; 
 }
